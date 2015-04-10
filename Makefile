@@ -3,7 +3,7 @@ LDLIBS+=-lpython2.7
 
 GENERATED=str *.so woex woexp.c
 
-all:	str repeat.so woex woexp.so
+all:	str repeat.so woex woexp.so ftw.so
 
 %.c:	%.pyx
 	cython $< -o $@
